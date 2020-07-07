@@ -1,0 +1,12 @@
+var viz;
+                
+                        function initViz() {
+                            var containerDiv = document.getElementById("vizContainer"),
+                                url = "https://public.tableau.com/shared/JQTCYF484?:display_count=y&:origin=viz_share_link",
+                                options = {
+                                    hideTabs: true
+                                };
+                
+                            viz = new tableau.Viz(containerDiv, url, options);
+                        }
+                
