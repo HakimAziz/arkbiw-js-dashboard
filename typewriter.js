@@ -18,7 +18,7 @@ var TxtType = function(el, toRotate, period) {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span><span class="wrap-blink" aria-hidden="true"></span>';
 
         var that = this;
         var delta = 200 - Math.random() * 100;
@@ -51,7 +51,7 @@ var TxtType = function(el, toRotate, period) {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap {border-right: 0.08em solid #C7CED7; animation: blink-animation 1s steps(5, start) infinite;}";
+        css.innerHTML = ".typewrite > .wrap {border-right: 0.08em solid #C7CED7}";
             
         document.body.appendChild(css);
     };
