@@ -52,7 +52,7 @@ var TxtType = function(el, toRotate, period) {
         var css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap {
-//             border-right: 0.08em solid #C7CED7
+             border-right: 0.08em solid #C7CED7
     }";
             
         document.body.appendChild(css);
