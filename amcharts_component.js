@@ -1,4 +1,4 @@
-class amChartsComponent {
+class AmChartsComponent {
     constructor(attr){
         this.idElm = attr.idElm;
         this.data = attr.data;
